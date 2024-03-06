@@ -1,1 +1,261 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cinza:#F6F6F6;
+    --preto:#1B1B1B;
+    --azul:#0054FF;
+    --cinzaescuro:#415A8C;
+
+}
+
+html {
+    /* scroll-behavior: smooth; */
+  }
+
+header {
+    background-color:var(--cinza);
+    height: 90px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: -1px 1px 2px 0px #cccccc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+header span {
+    font-weight: 600;
+    color: var(--preto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px
+}
+
+span img{
+    width: 60px;
+    border: 3px solid var(--azul);
+    border-radius: 50%;
+    
+}
+
+header .menu_mobile i {
+    font-size: 30px;
+    color: var(--preto);
+    cursor: pointer;
+}
+
+header nav {
+    display: none;
+    
+}
+
+header nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    cursor: pointer;
+}
+main {
+    border:0px solid rgb(200, 200, 200);
+    margin: auto;
+    width: 100%;
+    /* box-shadow: 1px 1px 6px 4px #c3c3c3; */
+}
+.inicio {
+    display: flex;
+    margin-top: 235px;
+    flex-direction: column-reverse;
+}
+
+section .front-end{
+    /* border:1px solid rgb(200, 200, 200); */
+    padding: 20px;
+    /* Deixando no meio e centralizado */
+    margin: auto;
+    width: 95%;
+    /* margin-top: 120px; */
+}
+
+section .front-end p{
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+    font-size: 2rem;
+    line-height: 55px;
+    font-weight: 600;
+    color: var(--preto);
+}
+
+section .front-end .azdest {
+    color: var(--azul);
+}
+
+section .stacks {
+    margin-top: 50px;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    /* border:1px solid black; */
+}
+
+section .stacks img{
+    width: 100px;
+    animation: teste 2s ease-in-out infinite;
+    border-radius: 50%;
+}
+
+@keyframes teste {
+0%{
+    
+}
+
+50% {
+    transform: translate(0, -10px);
+}
+
+100%{
+    
+}
+
+}
+
+section button {
+    border:none;
+    color: white;
+    font-weight: 500;
+    border-radius: 7px;
+    margin-top: 10px;
+    height: 40px;
+    width: 90%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+section button i {
+    font-size: 1.6rem;
+}
+
+section .contato {
+    margin-top: 30px;
+    background-color: var(--azul);
+}
+
+section .curriculum {
+    background-color: var(--cinzaescuro);
+}
+
+section .social {
+    margin-top: 15px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+section .social i{
+    color: var(--preto);
+    font-size: 40px;
+    cursor: pointer;
+}
+section .img {
+    text-align: center;
+}
+section .img img {
+    max-width: 200px;
+    width: 50%;
+    background-color: var(--azul);
+    border-radius: 50% 50% 10%;
+    border: 5px solid #0054ff;
+    box-shadow: 0px -1px 1px #0054ff;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobre-mim {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.sobre-mim p {
+    margin-top: 20px;
+    width: 80%;
+    font-size: 1.2rem;
+
+    text-align: center;
+}
+
+.projetos {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+}
+
+
+.projeto {
+    width: 90%;
+    margin-top: 30px;
+    box-shadow: 1px 1px 5px 0px #00000059;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+}
+
+.projeto .image{
+    box-shadow: 1px 1px 5px 0px #00000059;
+    margin-left: 10px;
+    max-width: 250px;
+    background-image: url(../image/Projets/to-do-list.png);
+    background-size: cover;
+    height: 90%;
+}
+
+.projeto .tituloedescricao {
+        margin: auto;
+        width: 60%;
+}
+
+.projeto .tituloedescricao h1 {
+    text-align: center;
+}
+
+
+.nuvem img{
+    position: fixed;
+    width: 15%;
+    top:120px;
+    left: 200px;
+    animation: nuvem 15s ease-in-out infinite;
+    z-index: -1;
+}
+
+

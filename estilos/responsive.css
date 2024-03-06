@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+/* Tela Média */
+@media (min-width: 769px) {
+
+    /* Tira o menu de hamburguer */
+    header .menu_mobile i {
+        display: none;
+    }
+    /* Adiciona o menu lateral */
+    header nav {
+        display: inline;
+    }
+
+    main {
+        width: 90%;
+        
+    }
+
+    section button {
+        width: 50%;
+    }
+
+    .sobre-mim p {
+        width: 50%;
+    }
+
+    .projeto {
+        width: 50%;
+    }
+    
+    
+
+
+
+}
+
+/* Tela Grande */
+@media (min-width: 1025px) {
+
+}
