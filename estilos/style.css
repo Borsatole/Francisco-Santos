@@ -20,6 +20,18 @@ html {
     scroll-behavior: smooth;
   }
 
+nav li a{
+    color: var(--preto);
+    text-decoration: none;
+    padding-bottom: 24px;
+}
+
+.active{
+    border-bottom: 4px solid var(--azul);
+}
+
+
+
 header {
     background-color:var(--cinza);
     height: 90px;
@@ -75,7 +87,7 @@ main {
 }
 .inicio {
     display: flex;
-    margin-top: 235px;
+    margin-top: 0px;
     flex-direction: column-reverse;
 }
 
@@ -93,7 +105,7 @@ section .front-end p{
     width: 80%;
     margin: auto;
     font-size: 2rem;
-    line-height: 55px;
+    line-height: 60px;
     font-weight: 600;
     color: var(--preto);
 }
@@ -112,17 +124,17 @@ section .stacks {
 
 section .stacks img{
     width: 100px;
-    animation: teste 2s ease-in-out infinite;
+    animation: stacks 2s ease-in-out infinite;
     border-radius: 50%;
 }
 
-@keyframes teste {
+@keyframes stacks {
 0%{
     
 }
 
 50% {
-    transform: translate(0, -10px);
+    transform: translate(0, -15px);
 }
 
 100%{
@@ -131,7 +143,7 @@ section .stacks img{
 
 }
 
-section button {
+section a {
     border:none;
     color: white;
     font-weight: 500;
@@ -144,9 +156,10 @@ section button {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    text-decoration: none;
 }
 
-section button i {
+section a i {
     font-size: 1.6rem;
 }
 
@@ -173,6 +186,7 @@ section .social i{
     cursor: pointer;
 }
 section .img {
+    padding-top: 120px;
     text-align: center;
 }
 section .img img {
@@ -192,7 +206,7 @@ section .img img {
 }
 
 .sobre-mim {
-    margin-top: 50px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -221,41 +235,40 @@ section .img img {
 
 .projeto {
     width: 90%;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     box-shadow: 1px 1px 5px 0px #00000059;
-    height: 200px;
+    height: 250px;
+    padding: 10px;
     overflow: hidden;
     display: flex;
     align-items: center;
+    gap: 10px;
+    margin: auto;
 
 }
 
-.projeto .image{
-    box-shadow: 1px 1px 5px 0px #00000059;
-    margin-left: 10px;
-    max-width: 250px;
-    background-image: url(../image/Projets/to-do-list.png);
-    background-size: cover;
-    height: 90%;
+.projeto .projeimg{
+    padding: 10px;
+    width: 200px;
+    height: 100%;
 }
 
-.projeto .tituloedescricao {
-        margin: auto;
-        width: 60%;
+.projeto .projeimg img{
+    width: 100%;
+    height: 100%;
 }
 
-.projeto .tituloedescricao h1 {
-    text-align: center;
+.projeto .descricao {
+    width: 70%;
+    margin: auto;
 }
 
-
-.nuvem img{
-    position: fixed;
-    width: 15%;
-    top:120px;
-    left: 200px;
-    animation: nuvem 15s ease-in-out infinite;
-    z-index: -1;
+.projetos section {
+    margin-top: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
-
 
