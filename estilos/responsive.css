@@ -31,8 +31,12 @@
         margin: 2px;
     }
 
+    .projeto .descricao {
+        font-size: 9px;
+        width: 100%;
+    }
+
     .projetos section {
-        
         flex-direction: row;
 
     }
@@ -41,6 +45,13 @@
 
 
 
+}
+
+@media (min-width: 1189px) {
+    .projeto .descricao {
+        font-size: 15px;
+        width: 100%;
+    }
 }
 
 /* Tela Grande */
