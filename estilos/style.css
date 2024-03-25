@@ -32,6 +32,7 @@ nav li a{
 
 
 
+
 header {
     background-color:var(--cinza);
     height: 90px;
@@ -184,10 +185,14 @@ section .curriculum:hover {
 
 section .social {
     margin-top: 15px;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 5px;
+}
+
+section .social a{
+    border: 1px solid black;
+    width: 90px;
 }
 
 section .social i{
