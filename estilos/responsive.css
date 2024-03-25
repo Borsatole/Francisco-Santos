@@ -16,6 +16,10 @@
     .projeto {
         max-width: 350px;
     }
+
+    .projeto .descricao p{
+        height: 250px;
+    }
     /* Tira o menu de hamburguer */
     header .menu_mobile i {
         display: none;
