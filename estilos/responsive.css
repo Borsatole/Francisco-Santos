@@ -3,7 +3,19 @@
 
 /* Tela Média */
 @media (min-width: 769px) {
+    .projetos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
+    .projeto img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .projeto {
+        max-width: 350px;
+    }
     /* Tira o menu de hamburguer */
     header .menu_mobile i {
         display: none;
@@ -26,32 +38,22 @@
         width: 70%;
     }
 
-    .projeto {
-        width: 35%;
-        margin: 2px;
-    }
+    
 
-    .projeto .descricao {
-        font-size: 9px;
-        width: 100%;
-    }
-
-    .projetos section {
-        flex-direction: row;
-
-    }
+    
     
     
 
 
 
 }
-
+/* @media (min-width: 839px) {
+    .projeto {
+        max-width: 100%;
+    } */
+/* } */
 @media (min-width: 1189px) {
-    .projeto .descricao {
-        font-size: 15px;
-        width: 100%;
-    }
+    
 }
 
 /* Tela Grande */
