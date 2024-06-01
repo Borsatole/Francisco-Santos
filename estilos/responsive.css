@@ -18,7 +18,8 @@
     }
 
     .projeto .descricao p{
-        height: 250px;
+        max-height: 176px;
+        width: 100%;
     }
     /* Tira o menu de hamburguer */
     header .menu_mobile i {
